@@ -1,54 +1,46 @@
-# React + TypeScript + Vite
+# AI Safety Incident Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a web-based dashboard for tracking and managing potential AI safety incidents. It is built using React, Tailwind CSS for styling, and Lucide for icons.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run this project locally, follow these steps:
 
-## Expanding the ESLint configuration
+1.  **Clone the repository from Git:**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+    ```bash
+    git clone <git@github.com:robinpanwar8077/AISafetyDashboard.git>
+    cd ai-safety-dashboard
+    ```
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+2.  **Install the necessary dependencies:**
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+    This project uses Node.js and npm (Node Package Manager). Make sure you have Node.js installed on your system. Then, run the following command in the project directory:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+    ```bash
+    npm install
+    ```
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+    This command will download and install all the libraries and dependencies listed in the `package.json` file, including React, Tailwind CSS, and Lucide.
+
+3.  **Run the development server:**
+
+    Once the dependencies are installed, you can start the development server using the following command:
+
+    ```bash
+    npm run dev
+    ```
+
+    This command will typically start a local development server (usually at `http://localhost:5173/` or a similar address). Open this URL in your web browser to view the dashboard.
+
+## Technologies Used
+
+- **React:** A JavaScript library for building user interfaces.
+- **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
+- **Lucide:** A library of beautiful and consistent open-source icons.
+- **Vite:** A build tool that provides a fast and enjoyable development experience. (This is the underlying build tool used by the `npm run dev` script).
+- **npm (Node Package Manager):** The package manager used to install and manage project dependencies.
+
+## Project Structure (Example)
+
+While the exact structure might vary, a typical React Vite project with this setup might look something like this:
