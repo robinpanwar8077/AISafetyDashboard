@@ -2,6 +2,8 @@
 
 This project is a web-based dashboard for tracking and managing potential AI safety incidents. It is built using React, Tailwind CSS for styling, and Lucide for icons.
 
+**Live Demo:** [https://aisafetydashboard.netlify.app/](https://aisafetydashboard.netlify.app/)
+
 ## Getting Started
 
 To run this project locally, follow these steps:
@@ -9,9 +11,11 @@ To run this project locally, follow these steps:
 1.  **Clone the repository from Git:**
 
     ```bash
-    git clone <git@github.com:robinpanwar8077/AISafetyDashboard.git>
+    git clone <YOUR_GIT_CLONE_URL>
     cd ai-safety-dashboard
     ```
+
+    _(Replace `<YOUR_GIT_CLONE_URL>` with the actual URL of your Git repository)_
 
 2.  **Install the necessary dependencies:**
 

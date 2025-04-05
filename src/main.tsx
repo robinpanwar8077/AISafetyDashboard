@@ -7,8 +7,7 @@ import { Myprovider } from "./context/ContextData.tsx";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <Myprovider>
-      {" "}
-      <App />{" "}
+      <App />
     </Myprovider>
   </StrictMode>
 );
